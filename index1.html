@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/cortina.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/texto_centro.css" />
+    <link rel="stylesheet" href="./styles/menu2.css" />
+    <link rel="stylesheet" href="./styles/ajuste.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>VEYRON</title>
+    <style>
+        /* Estilo para centrar el menú */
+        
+        .desktop-main-menu {
+            display: flex;
+            justify-content: center;
+        }
+        /* Estilo para resaltar las opciones de cursos */
+        
+        .desktop-main-menu .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+            background-color: #aeebb9;
+            /* Cambia el color de fondo como desees */
+        }
+        /* Estilo para el menú desplegable de cursos */
+        
+        .desktop-main-menu .nav-item.dropdown .dropdown-menu {
+            display: none;
+            /* Oculta las opciones de cursos inicialmente */
+            position: absolute;
+            width: 10;
+            /* Ancho del menú desplegable */
+            top: 100%;
+            /* Alinea el menú abajo del elemento padre */
+            left: 1cap;
+            transform: translateX(-50%);
+        }
+        /* Ajuste para mostrar las opciones de cursos completamente */
+        
+        .desktop-main-menu .nav-item.dropdown .dropdown-menu ul {
+            min-width: 500%;
+            padding: 50;
+        }
+        /* Mostrar las opciones de cursos cuando se pasa el ratón */
+        
+        .desktop-main-menu .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        
+        .main-header {
+            transition: transform 0.3s;
+            transform: translateY(0);
+        }
+        
+        .main-header.hidden {
+            transform: translateY(-100%);
+        }
+    </style>0
+</head>
+
+
+<body id="body">
+    <div id="overlay"></div>
+    <div id="overlay"></div>
+    <div id="mobile-menu" class="mobile-main-menu">
+        <ul>
+            <li><a href="nosotrod.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="dosimetria.html">Dosimetría</a></li>
+            <li><a href="cursos4.html">Cursos</a></li>
+            <li><a href="https://wa.me/7292817728" target="_blank">WhatsApp</a></li>
+            <li>
+                <h3 style="color: #fcac0b; text-align: center; width: 100%;">Unete a Veyon</h3>
+            </li>
+            <li><a href="nuevos.html">Registro</a></li>
+            <li><a href="login.html">Iniciar Sesión</a></li>
+        </ul>
+    </div>
+    <p>
+        <p></p>
+
+        <body id="body">
+            <!-- ... (código del overlay y el menú móvil) ... -->
+            <header class="main-header">
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./img/CALIDAD.png" alt="">
+                    </a>
+                </div>
+                <nav class="desktop-main-menu">
+                    <!-- ... (código del menú principal) ... -->
+                    <ul>
+                        <li class="nav-item active"><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Servicios</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <ul>
+                                    <li><a href="fisicaMedica.html" class="dropdown-item">•	Física médica </a></li>
+                                    <li><a href="seguridadR.html" class="dropdown-item">•Seguridad Radiológica </a></li>
+                                    <li><a href="tecnologiaNuclear.html" class="dropdown-item">•	Tecnología Nuclear</a></li>
+                                    <li><a href="servicio.html" class="dropdown-item">•servicios de ingeniería</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                </nav>
+            </header>
+            <!-- ... (código de las secciones y el pie de página) ... -->
+
+            <script>
+                window.addEventListener('scroll', function() {
+                    // Cuando el usuario llega al final de la página
+                    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+                        // Oculta la página actual gradualmente
+                        document.body.style.transition = 'opacity 1s';
+                        document.body.style.opacity = '1';
+                        setTimeout(function() {
+                            // Cambia la ubicación después de la transición
+                            window.location.href = 'index.html';
+                        }, 40); // Tiempo de transición en milisegundos (0.5 segundos en este caso)
+
+
+                    }
+                });
+
+
+                window.addEventListener('scroll', function() {
+                    const header = document.querySelector('.main-header');
+                    if (window.scrollY > 50) {
+                        header.classList.add('hidden');
+                    } else {
+                        header.classList.remove('hidden');
+                    }
+                });
+            </script>
+
+
+
+
+            <!-- hambuerger menu -->
+            <!-- Topbar Start -->
+            <div></div>
+            <button id="menu-btn" class="hamburger" type="button">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+
+            <!-- Secciones -->
+            <section id="full-screen-image" class="full-screen-image">
+                <section id="full-screen-image">
+                    <h5 id="welcome-text">VEYRON</h5>
+                    <h6 id="welcome-text2">Better future, powered by nuclear technology</h6>
+                    <div id="down-arrow"></div>
+
+
+
+                    <div class="scroll-arrow">
+                        <svg width="30px" height="20px">
+                    <path
+                      stroke="#ffffff"
+                      fill="none"
+                      stroke-width="2px"
+                      d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
+                    ></path>
+                  </svg>
+                </section>
+                <div id="down-arrow"></div>
+
+
+                <script src="js/script.js"></script>
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
+                    AOS.init();
+                </script>
+        </body>
+
+</html>
